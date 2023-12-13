@@ -28,7 +28,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - JavaScript
 - Git e Github
-- Figma
 
 ## 💻 Projeto
 
@@ -36,14 +35,10 @@ O Datamac é um website para ajudar a divulgar a empresa Datamac Automação Com
 
 - [Visite o projeto online](https://patriciasilvadev.github.io/datamac)
 
-### Tarefas
+### Descrição do Website
 
-- Definir se será website, website + blog, ou website + blog + ecommerce.
-- Planejamento das Etapas
-- Definir Identidade Visual (Fontes, cores e elementos)
-- Desenvolvimento do conteúdo (Textos, imagens e videos)
-- Implantar API do Google ADS
-- Newsletter
+- Páginas Institucionais
+- Páginas Personalizadas
 
 ## 🔖 Layout
 
