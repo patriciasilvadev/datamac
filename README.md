@@ -43,7 +43,7 @@ O Datamac é um website para ajudar a divulgar a empresa Datamac Automação Com
 - Páginas Institucionais
 - Página Serviços
 - Página Produtos
-- Página Suluções
+- Página Soluções
 - Sistemas Depoimentos
 - Sistema de Blog
 - Formulário de Contato
