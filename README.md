@@ -35,10 +35,20 @@ O Datamac é um website para ajudar a divulgar a empresa Datamac Automação Com
 
 - [Visite o projeto online](https://patriciasilvadev.github.io/datamac)
 
-### Descrição do Website
+### Descrição do Website (Páginas e Funcionalidades):
 
+- Site Avançado com conteúdo Sofisticado
+- SEO Otimizado para buscadores
+- Banner Rotarivo Animado
 - Páginas Institucionais
-- Páginas Personalizadas
+- Página Serviços
+- Página Produtos
+- Página Suluções
+- Sistemas Depoimentos
+- Sistema de Blog
+- Formulário de Contato
+- Mapa de Localização Google
+- Download com e/ou sem senha
 
 ## 🔖 Layout
 
