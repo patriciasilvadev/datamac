@@ -50,10 +50,6 @@ O Datamac é um website para ajudar a divulgar a empresa Datamac Automação Com
 - Mapa de Localização Google
 - Download com e/ou sem senha
 
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/JCXmBxOkfVkQYxO5s46BfQ/Datamac?type=design&t=NDW4fhLY5EqcAw2J-6). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
