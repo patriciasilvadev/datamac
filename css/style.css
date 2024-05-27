@@ -9,6 +9,15 @@
 	--dark-color: #003066;
 	
 }
+
+.centralizado {
+    width: 100%;     /* Define a largura da linha horizontal como 80% da largura da tela */
+    margin: 0 auto; /* Centraliza a linha horizontal */
+    border: none;   /* Remove a borda padrão */
+    border-top: 4px solid var(--primary-color); /* Adiciona uma borda superior para criar a linha horizontal */
+}
+
+
 body {
     color: #666666;
     background: #dddddd;
@@ -107,7 +116,7 @@ a:focus {
   align-items: center;
 }
 
-.btnproduct {
+.btnproduct, .btnsolucoes {
    position: relative;
     margin-top: 15px;
     padding: 15px 35px;
@@ -119,7 +128,7 @@ a:focus {
     background: var(--dark-color);
     transition: .3s;
 }
-.ml-auto .btnproduct:hover {
+.ml-auto .btnsolucoes:hover, .ml-auto .btnproduct:hover {
     color: #ffffff;
     background: var(--primary-color);
     border-color: var(--primary-color);
@@ -453,7 +462,7 @@ a:focus {
 .page-header {
     position: relative;
     margin-bottom: 45px;
-    padding: 90px 0;
+    padding: 40px 0;
     text-align: center;
     background: var(--dark-color);
 }
@@ -461,7 +470,7 @@ a:focus {
 .page-header h2 {
     position: relative;
     color: #ffffff;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
     padding-bottom: 5px;
@@ -505,7 +514,7 @@ a:focus {
 
 @media (max-width: 991.98px) {
     .page-header {
-        padding: 60px 0;
+        padding: 40px 0;
     }
     
     .page-header h2 {
@@ -519,7 +528,7 @@ a:focus {
 
 @media (max-width: 767.98px) {
     .page-header {
-        padding: 45px 0;
+        padding: 40px 0;
     }
     
     .page-header h2 {
@@ -1482,7 +1491,7 @@ a:focus {
 }
 
 .single .single-tags a:hover {
-    color: #fdbe33;
+    color: #ffffff;
     background: var(--primary-color);
 }
 
@@ -2173,6 +2182,11 @@ a:focus {
 .footer .newsletter {
     position: relative;
     margin-bottom: 45px;
+}
+.footer span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .footer h2 {
