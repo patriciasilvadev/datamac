@@ -8,6 +8,9 @@
 	--bg-primary: #f2f2f2;
 	--dark-color: #003066;
 	
+	--light-gray: ;
+	--dark-gray: ;
+	
 }
 
 .centralizado {
@@ -833,7 +836,7 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: var(--primary-color);
+    background: #f2f2f2;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -845,7 +848,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 18px;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--dark-color);
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -957,20 +960,21 @@ a:focus {
     position: relative;
     padding: 25px 15px;
     text-align: center;
-    background: var(--primary-color);
     transition: .5s;
+	background: #f2f2f2;
+	
 }
 
 .product .product-text h2 {
     font-size: 20px;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--dark-color);
     transition: .5s;
 }
 
 .product .product-text p {
     margin: 0;
-    color: #ffffff;
+    color: var(--dark-color);
 }
 
 .product .product-item:hover .product-text {
@@ -979,7 +983,12 @@ a:focus {
 
 .product .product-item:hover .product-text h2 {
     color: #ffffff;
-    letter-spacing: 1px;
+  
+}
+
+.product .product-item:hover .product-text p {
+    color: #ffffff;
+  
 }
 
 .product .product-social {
