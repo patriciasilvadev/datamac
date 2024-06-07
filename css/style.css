@@ -738,7 +738,7 @@ a:focus {
 
 .services .services-icon {
     position: relative;
-    margin: 7px 15px 0 15px;
+    margin: 20px 15px 0 15px;
     width: 40px;
     display: flex;
     align-items: center;
@@ -2402,4 +2402,56 @@ a:focus {
       filter: brightness(200%);
     }
   }
+  
+  
+/* Float four columns side by side */
+.columnInstagram {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.rowInstagram {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.rowInstagram:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 768px) {
+  .columnInstagram {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Responsive columns */
+@media screen and (min-width: 769px) {
+  .columnInstagram {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Responsive columns */
+@media screen and (min-width: 1280px) {
+  .columnInstagram {
+    width: 25%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.cardInstagram {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
 
