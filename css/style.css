@@ -555,7 +555,7 @@ a:focus {
 
 .section-header p {
     color: var(--dark-color);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     margin-bottom: 5px;
 }
@@ -563,7 +563,7 @@ a:focus {
 .section-header h2 {
     margin: 0;
     position: relative;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -694,8 +694,12 @@ a:focus {
 }
 
 .about .about-text p {
-    font-size: 16px;
+    font-size: 12px;
 }
+.about .about-text ul {
+    font-size: 12px;
+}
+
 
 .about .about-text a.btn {
     position: relative;
@@ -966,7 +970,7 @@ a:focus {
 }
 
 .product .product-text h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--dark-color);
     transition: .5s;
@@ -1038,9 +1042,9 @@ a:focus {
 }
 
 /*******************************/
-/******* Testimonial CSS *******/
+/******* Contador parceiro CSS *******/
 /*******************************/
-.testimonial {
+.accounting {
     position: relative;
     margin: 45px 0;
     padding: 90px 0;
@@ -1052,37 +1056,37 @@ a:focus {
     background-size: cover;
 }
 
-.testimonial .container {
+.accounting .container {
     max-width: 760px;
 }
 
-.about-page .testimonial {
+.about-page .accounting {
     padding-bottom: 90px;
 }
 
-.testimonial .testimonial-slider-nav {
+.accounting .accounting-slider-nav {
     position: relative;
     width: 300px;
     margin: 0 auto;
 }
 
-.testimonial .testimonial-slider-nav .slick-slide {
+.accounting .accounting-slider-nav .slick-slide {
     position: relative;
     opacity: 0;
     transition: .5s;
 }
 
-.testimonial .testimonial-slider-nav .slick-active {
+.accounting .accounting-slider-nav .slick-active {
     opacity: 1;
     transform: scale(1.3);
 }
 
-.testimonial .testimonial-slider-nav .slick-center {
+.accounting .accounting-slider-nav .slick-center {
     transform: scale(1.8);
     z-index: 1;
 }
 
-.testimonial .testimonial-slider-nav .slick-slide img {
+.accounting .accounting-slider-nav .slick-slide img {
     position: relative;
     display: block;
     margin-top: 37px;
@@ -1091,13 +1095,13 @@ a:focus {
     border-radius: 100px;
 }
 
-.testimonial .testimonial-slider {
+.accounting .accounting-slider {
     position: relative;
     margin-top: 15px;
     padding-top: 50px;
 }
 
-.testimonial .testimonial-slider::before {
+.accounting .accounting-slider::before {
     position: absolute;
     content: "";
     width: 60px;
@@ -1107,13 +1111,13 @@ a:focus {
     background: url(../img/quote.png) top center no-repeat;
 }
 
-.testimonial .testimonial-slider h3 {
+.accounting .accounting-slider h3 {
     color: #ffffff;
     font-size: 22px;
     font-weight: 700;
 }
 
-.testimonial .testimonial-slider h4 {
+.accounting .accounting-slider h4 {
     font-size: 14px;
     font-weight: 300;
     color: #ffffff;
@@ -1121,7 +1125,7 @@ a:focus {
     margin-bottom: 10px;
 }
 
-.testimonial .testimonial-slider p {
+.accounting .accounting-slider p {
     color: #ffffff;
     font-size: 16px;
     font-weight: 300;
@@ -2168,6 +2172,10 @@ a:focus {
     list-style-type: none;
 }
 
+
+/*****************************************/
+/********* Mapa localização CSS **********/
+/*****************************************/
 .maps{
     width: 90%;
     margin: 0px auto;
@@ -2404,7 +2412,14 @@ a:focus {
   }
   
   
-/* Float four columns side by side */
+/*******************************************/
+/********* Cases de sucessos CSS **********/
+/******************************************/
+.casesinsta {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
 .columnInstagram {
   float: left;
   width: 25%;

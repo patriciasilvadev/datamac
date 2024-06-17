@@ -30,7 +30,7 @@
     <body>
         <div class="wrapper">
             <!-- Barra Superior Inicio -->
-            <div class="top-bar">
+            <header class="top-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </header>
             <!-- Barra Superior Final -->
 
             <!-- Barra de Navegação Inicio -->
@@ -112,7 +112,7 @@
             <!-- Barra de Navegação Final -->
             
             
-            <!-- Page Header Start -->
+            <!-- Cabeçalho Inicio -->
             <div class="page-header">
                 <div class="container">
                     <div class="row">
@@ -126,20 +126,18 @@
                     </div>
                 </div>
             </div>
-            <!-- Page Header End -->
+            <!-- Cabeçalho Final -->
 
-       <!-- Utilitários p/ clientes Inicio -->
+            <!-- Utilitários p/ clientes Inicio -->
             <section class="utilities">
                 <div class="container">
-                    <div class="section-header text-center">
+                    <header class="section-header text-center">
                         <p>Links úteis para ajudar você</p>
                         <h2>Área do Cliente</h2>
-                    </div>
+                    </header>
                     <div class="row">
                         <div class="col-md-6">
-                            <div id="accordion-1">
-                               
-                               
+                            <div id="accordion-1">                              
                                 <div class="card wow fadeInLeft" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
@@ -170,21 +168,33 @@
                                         </div>
                                     </div>
                                 </div>
-								 <div class="card wow fadeInRight" data-wow-delay="0.1s">
+								 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                                     <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                            <img src="img/ifox_logo.jpg" width="50px">
-                                            Manual iFox
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+											<img src="img/syspdv_logo.png" width="50px">
+                                            Renovaçao SysPDV
                                         </a>
                                     </div>
-                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            <a href="pdf/Manual Basico Microterminal IFox iSAT - Datamac.pdf">Manual Microterminal IFox iSAT</a>
+											 <a href="https://sistemas.casamagalhaes.com.br/newSwGeraChaveSemLogar.cm" target="_blank"><span>Clique Aqui, </span></a>para renovar a chave do SysPDV!
                                         </div>
                                     </div>
                                 </div>
-                            
-                             
+                                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+											<img src="img/mobility_logo.jpg" width="50px">
+                                            Renovaçao Mobility
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            <a href="http://54.207.107.184:1603/" target="_blank"><span>Clique Aqui, </span></a>para baixar a atualizaçao do Mobility<br>
+											E solicite ao suporte a renovaçao da Licença do sistema!
+                                        </div>
+                                    </div>
+                                </div>                            
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -199,9 +209,9 @@
                                     </div>
                                     <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            <a href="pdf/Manual Básico Sistema SysPdv - SAT - Datamac.pdf">Manual SysPdv - SAT</a>
-                                            <a href="pdf/Manual Básico Sistema SysPdv - NFe - Datamac.pdf">Manual SysPdv - NFe</a>
-                                            <a href="pdf/Manual Básico Sistema SysPdv - Renovação de Chave - Datamac.pdf">Manual SysPdv - Renovação de Chave</a>
+                                            <a href="pdf/Manual Básico Sistema SysPdv - SAT - Datamac.pdf" target="_blank">Manual SysPdv - SAT</a>
+                                            <a href="pdf/Manual Básico Sistema SysPdv - NFe - Datamac.pdf" target="_blank">Manual SysPdv - NFe</a>
+                                            <a href="pdf/Manual Básico Sistema SysPdv - Renovação de Chave - Datamac.pdf" target="_blank">Manual SysPdv - Renovação de Chave</a>
                                         </div>
                                     </div>
                                 </div>
@@ -214,8 +224,8 @@
                                     </div>
                                     <div id="collapseEight" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            <a href="pdf/Manual Básico Sistema Mobility POS - SAT - Datamac.pdf">Manual Mobility POS - SAT</a>
-                                            <a href="pdf/Manual Básico Sistema Mobility - Cadastro de Produtos - Datamac.pdf">Manual Mobility - Cadastro de Produtos</a>
+                                            <a href="pdf/Manual Básico Sistema Mobility POS - SAT - Datamac.pdf" target="_blank">Manual Mobility POS - SAT</a>
+                                            <a href="pdf/Manual Básico Sistema Mobility - Cadastro de Produtos - Datamac.pdf" target="_blank">Manual Mobility - Cadastro de Produtos</a>
                                         </div>
                                     </div>
                                 </div>
@@ -228,7 +238,20 @@
                                     </div>
                                     <div id="collapseNine" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                           <a href="pdf/Manual Básico Sistema Saurus - SAT - Datamac.pdf">Manual Saurus - SAT</a>
+                                           <a href="pdf/Manual Básico Sistema Saurus - SAT - Datamac.pdf" target="_blank">Manual Saurus - SAT</a>
+                                        </div>
+                                    </div>
+                                </div>
+								 <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
+                                            <img src="img/ifox_logo.jpg" width="50px">
+                                            Manual iFox
+                                        </a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            <a href="pdf/Manual Basico Microterminal IFox iSAT - Datamac.pdf" target="_blank">Manual Microterminal IFox iSAT</a>
                                         </div>
                                     </div>
                                 </div>
@@ -237,21 +260,19 @@
                     </div>
                 </div>
             </section>
-            <!-- Utilitários p/ clientes Final -->
+            <!-- Utilitários p/ clientes Final -->	
 
 
-                       <!-- Rodapé Inicio -->
-            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <!-- Rodapé Inicio -->
+            <footer class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
                     <div class="row">
 					<div class="col-md-6 col-lg-3">
 						<span><img src="img/favicon.png" width="50px">Datamac</span>
-                            <div class="footer-contact">
-                                
+                            <div class="footer-contact">                               
                                 <p>
                                    Ser reconhecida como sinônimo de inovação, tecnologia, qualidade e excelência nos serviços prestados.
-                                </p>
-                                
+                                </p>                                
                             </div>
                         </div>
 						 <div class="col-md-6 col-lg-3">
@@ -267,17 +288,16 @@
                                     <a href="https://br.linkedin.com/company/datamac-automa%C3%A7%C3%A3o-comercial" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
-                        </div>
-                       
+                        </div>                       
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Serviços</h2>
-                                <a href="servicos.html">Consultoria Comercial</a>
+                                <a href="servicos.html">Consultoria e Demonstração</a>
                                 <a href="servicos.html">Treinamentos</a>
                                 <a href="servicos.html">Suporte Técnico</a>
                                 <a href="servicos.html">Manutenção Preventiva</a>
-                                <a href="servicos.html">Manutenção Corretiva</a>                                
-                            </div>
+                                <a href="servicos.html">Manutenção Corretiva</a>
+							</div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
@@ -288,10 +308,7 @@
                                 <a href="produtos.html">Equipamentos</a>
                                 <a href="cliente.html">Área do cliente</a>
                             </div>
-                        </div>
-                     
-                        
-                       
+                        </div>              
                     </div>
                 </div>
                 <div class="container footer-menu">
@@ -312,13 +329,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </footer>
             <!-- Rodapé Final -->
 
+			<!-- Botão Whatsapp inicio -->
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
             <a href="https://wa.me/5511996579667?text=Olá,%20Datamac!%20Quero%20um%20orçamento%20para%20o%20meu%20negócio." 
             class="go-to-zap" target="_blank"> <i style="margin-top:10px" class="fab fa-whatsapp"></i>
             </a>
+			<!-- Botão Whatsapp final -->
            
         </div>
 
