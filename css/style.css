@@ -555,7 +555,7 @@ a:focus {
 
 .section-header p {
     color: var(--dark-color);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 5px;
 }
@@ -563,7 +563,7 @@ a:focus {
 .section-header h2 {
     margin: 0;
     position: relative;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -694,10 +694,10 @@ a:focus {
 }
 
 .about .about-text p {
-    font-size: 12px;
+    font-size: 14px;
 }
 .about .about-text ul {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
