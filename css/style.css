@@ -601,7 +601,7 @@ a:focus {
 
 .contactwhats .contactwhats-icon {
     position: relative;
-    width: 60px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -610,24 +610,24 @@ a:focus {
 .contactwhats .contactwhats-icon::before {
     position: absolute;
     content: "";
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     top: -20px;
     left: -10px;
     border: 2px dotted #ffffff;
-    border-radius: 60px;
+    border-radius: 40px;
     z-index: 1;
 }
 
 .contactwhats .contactwhats-icon::after {
     position: absolute;
     content: "";
-    width: 79px;
-    height: 79px;
+    width: 59px;
+    height: 59px;
     top: -18px;
     left: -9px;
     background: var(--primary-color);
-    border-radius: 60px;
+    border-radius: 40px;
     z-index: 2;
 }
 
@@ -639,8 +639,8 @@ a:focus {
     position: relative;
     margin: 0;
     color: #ffffff;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 40px;
     z-index: 3;
 }
 
@@ -651,14 +651,14 @@ a:focus {
 .contactwhats .contactwhats-text h3 {
     margin: 0 0 10px 0;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .contactwhats .contactwhats-text p {
     margin: 0;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -729,88 +729,54 @@ a:focus {
 /*******************************/
 /********** Serviços CSS ***********/
 /*******************************/
-.services {
-    position: relative;
-    width: 100%;
-    padding: 45px 0;
+.servicos {
+	margin: 40px 0px;
+}
+/* Container for flexboxes */
+.row-services {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.services .col-6 {
-    display: flex;
-    align-items: flex-start;
+/* Create four equal columns */
+.column-services {
+  flex: 25%;
+  padding: 20px;
 }
-
-.services .services-icon {
-    position: relative;
-    margin: 20px 15px 0 15px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.content-services {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 0px;
+  color: white;
+  
 }
-
-.services .services-icon [class^="flaticon-"]::before {
-    margin: 0;
-    font-size: 60px;
-    line-height: 60px;
-    background-image: linear-gradient(#ffffff, var(--dark-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.services .services-right .services-icon [class^="flaticon-"]::before {
-    background-image: linear-gradient(#ffffff, var(--primary-color));
-}
-
-.services .services-left,
-.services .services-right {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.services .services-text h2 {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-
-.services .services-text p {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 600;    
-}
-
-.services .services-left {
-    color: #ffffff;
-    background: var(--primary-color);
-}
-
-.services .services-right {
-    color: #ffffff;
-    background: var(--dark-color);
-}
-
-.services .services-left h2 {
-    color: #ffffff;
-}
-.services .services-right h2 {
-    color: #ffffff;
-}
-
-.services .title-services {
+.content-services h2{
+	font-size: 25px;
 	color: #ffffff;
-	opacity: 0.7;
 }
 
+.left-services {
+	width: 30%;
+	padding: 20px;
+}
 
-@media(max-width: 767.98px) {
-   .curiosities {
-    display: flex;
+.right-services {
+	width: 70%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 1024px) {
+  .column-services {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row-services {
     flex-direction: column;
-    gap: 20px;
-   }
+  }
 }
-
 /*******************************/
 /*********** Soluções CSS **********/
 /*******************************/
