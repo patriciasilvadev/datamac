@@ -44,11 +44,10 @@ O Datamac é um website para ajudar a divulgar a empresa Datamac Automação Com
 - Página Serviços
 - Página Produtos
 - Página Soluções
-- Sistemas Depoimentos
-- Sistema de Blog
+- Sistemas Cases de Sucesso
 - Formulário de Contato
 - Mapa de Localização Google
-- Download com e/ou sem senha
+- Download de arquivos
 
 ## :memo: Licença
 
