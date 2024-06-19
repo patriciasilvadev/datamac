@@ -18,7 +18,7 @@ Website desenvolvido para a empresa Datamac Automação Comercial.<br/>
 <br>
 
 <p align="center">
-  <img alt="projeto Datamac" src=".github/preview.jpg" width="100%">
+  <img alt="projeto Datamac" src="preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
