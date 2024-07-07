@@ -201,17 +201,17 @@ a:focus {
 .top-bar .top-bar-icon [class^="flaticon-"]::before {
     margin: 0;
     color: #000000;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .top-bar .top-bar-text {
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .top-bar .top-bar-text h3 {
     margin: 0 0 5px 0;
     color: #000000;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -767,7 +767,7 @@ a:focus {
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1290px) {
   .column-services {
     flex: 50%;
   }
