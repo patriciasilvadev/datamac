@@ -695,6 +695,7 @@ a:focus {
 
 .about .about-text p {
     font-size: 14px;
+	text-align: justify;
 }
 .about .about-text ul {
     font-size: 14px;
