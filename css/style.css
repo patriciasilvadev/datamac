@@ -2399,3 +2399,131 @@ a:focus {
 }
 
 
+/*******************************************/
+/********* Cases de sucessos CSS **********/
+/******************************************/
+.mySlides-instacarousel {display: none}
+
+
+/* Slideshow container */
+.slideshow-container-instacarousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Next & previous buttons */
+.prev-instacarousel, .next-instacarousel {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next-instacarousel {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-instacarousel:hover, .next-instacarousel:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text-instacarousel {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext-instacarousel {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot-instacarousel {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-instacarousel, .dot-instacarousel:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade-instacarousel {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from-instacarousel {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev-instacarousel, .next-instacarousel,.text-instacarousel {font-size: 11px}
+}
+
+/* Float four columns side by side */
+.column-instacarousel {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+  margin: 0px auto;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row-instacarousel {margin: auto 30px;}
+
+/* Clear floats after the columns */
+.row-instacarousel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 768px) {
+  .column-instacarousel {
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card-instacarousel {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
