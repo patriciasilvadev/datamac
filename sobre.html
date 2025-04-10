@@ -31,6 +31,35 @@
     </head>
 
     <body>
+        <div class="container">
+            <!-- The Modal -->
+            <div class="modal" id="myModal" >
+              <div class="modal-dialog modal-lg modal-dialog-scrollable" >
+                <div class="modal-content" style="border: none;">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header bg-danger ">
+                    <h1 class="modal-title text-white"><img src="img/atencao.png" width="60px"> Atenção!</h1>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+
+                    <img src="Informativo SAT p NFCe.jpg" width="100%">
+        
+                  </div>
+                  
+                  <!-- Modal footer -->
+                  <div class="modal-footer bg-danger">
+                    <button type="button" class="btn btn-success" ><a class="btn animated fadeInUp text-white" href="https://wa.me/5511996579667/?text=Olá, Datamac! Acabei de visitar o site e gostaria de saber mais sobre a migração do SAT para a NFC-e!" target="_blank"><i class="fa-brands fa-whatsapp"></i> Solicitar Migração!</a></button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
         <main class="wrapper">
 		
             <!-- Barra Superior Inicio -->
@@ -346,5 +375,17 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <script>
+            $(document).ready(function(){
+              $("#myModal").modal("show");
+                
+              $("#myBtn").click(function(){
+                $("#myModal").modal("hide");
+              });
+              
+              
+            });
+        </script>
     </body>
 </html>
