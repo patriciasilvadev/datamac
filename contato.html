@@ -25,9 +25,193 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+
+
+
+<style>
+    /* Modal container */
+    #custom-modal-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.3);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1050;
+    }
+
+    #custom-modal-container.active {
+      display: flex;
+    }
+
+    /* Modal box */
+    .modal {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      max-width: 1000px;
+      height: 90vh;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-left {
+      background-color: #0078ff;
+      color: white;
+      padding: 60px 40px;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .modal-left h4 {
+      font-size: 32px;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .modal-left p {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .modal-left a.btn-whatsapp {
+      margin-top: 20px;
+      background-color: #25d366;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .modal-left a.btn-whatsapp:hover {
+      background-color: #1ebc59;
+      text-decoration: none;
+    }
+
+    .info-modal p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+
+    .modal-right {
+      padding: 30px;
+      width: 60%;
+      overflow-y: auto;
+    }
+
+    .modal-right h5 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .modal-right p {
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .modal {
+        flex-direction: column;
+        height: 90vh;
+      }
+
+      .modal-left,
+      .modal-right {
+        width: 100%;
+        height: auto;
+      }
+
+      .modal-right {
+        max-height: 50vh;
+      }
+    }
+  </style>
+      
     </head>
 
     <body>
+
+      
+<!-- Modal -->
+<div id="custom-modal-container">
+    <div class="modal">
+      <div class="modal-left">
+        <div>
+          <p><strong>Atenção!</strong></p>
+          <h4>Informativo NFC-e</h4>
+          <p>
+            Prezado Cliente, você está preparado para trocar o SAT-CFe pela NFC-e e manter sua empresa em conformidade com as novas regras fiscais em São Paulo?
+          </p>
+        </div>
+        <div>
+            <div class="info-modal"><p>Para mais informações, entre em contato com a Datamac!</p></div>
+          
+          <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale Conosco no WhatsApp</a>
+        </div>
+        <span class="close-btn" onclick="closeModal()">×</span>
+      </div>
+  
+      <div class="modal-right">
+        <h5><strong>O que é a NFC-e?</strong></h5>
+        <p>Nota Fiscal do Consumidor Eletrônica (NFC-e) é um documento fiscal digital que substitui o Cupom Fiscal emitido pelo SAT-CFe. O sistema NFC-e permite a emissão de notas diretamente pela internet, eliminando a necessidade de um equipamento SAT, tornando o processo mais ágil, econômico e seguro para o seu estabelecimento.</p>
+
+        <h5><strong>Quais são os requisitos para emissão de NFC-e?</strong></h5>
+        <p>Para emitir a NFC-e, sua empresa precisa atender a alguns requisitos essenciais. Primeiro, é necessário um computador com software emissor de NFC-e, devidamente homologado e configurado para garantir seu funcionamento correto. Além disso, é necessário contar com uma impressora térmica não fiscal, responsável pela impressão do DANFE NFC-e (Documento Auxiliar da Nota Fiscal Eletrônica).</p>
+        <p>Outro requisito fundamental é a conexão com a internet, pois as notas fiscais devem ser transmitidas em tempo real para a Secretaria da Fazenda. Também é obrigatório possuir um Certificado Digital válido, do tipo A1 ou A3,  vinculado ao CNPJ da empresa, que garanta a assinatura eletrônica das notas fiscais. <strong>Antes de adquirir o certificado digital, é importante verificar se o tipo(A1 ou A3) é compatível com o sistema emissor que você possui, consultando nosso suporte!</strong></p>
+        <p>Outro requisito fundamental é a conexão com a internet, pois as notas fiscais devem ser transmitidas em tempo real para a Secretaria da Fazenda. Também é obrigatório possuir um Certificado Digital válido, do tipo A1 ou A3,  vinculado ao CNPJ da empresa, que garanta a assinatura eletrônica das notas fiscais. Antes de adquirir o certificado digital, é importante verificar se o tipo(A1 ou A3) é compatível com o sistema emissor que você possui, consultando nosso suporte!</p>
+        <p>Além disso, a empresa precisa ser credenciada na SEFAZ-SP como emissora de NFC-e, garantindo sua regularidade perante o fisco. Por fim, é necessário obter o Código de Segurança do Contribuinte (CSC), gerado no Portal da NFC-e, que autentica as notas fiscais emitidas.</p>
+            
+        <h5><strong>Como funciona a NFC-e?</strong></h5>
+        <ul>
+            <li><strong>Sistema Emissor de NFC-e</strong> - Envia os dados da empresa e da venda via internet para a SEFAZ-SP.</li>
+            <li><strong>Certificado Digital</strong> - Assina electrônicamente a NFC-e durante a comunicação com a SEFAZ-SP.</li>
+            <li><strong>SEFAZ-SP</strong> - Valida os dados e retorna a NFC-e autorizada para o sistema emissor via internet.</li>
+            <li><strong>Impressora Térmica Não-Fiscal</strong> - Imprime a NFC-e.</li>
+        </ul>
+        
+        <h5><strong>Qual o prazo para troca do SAT pela NCF-e?</strong></h5>
+        <p>A Sefaz reforça que conforme <strong>Artigo 34-D da PCAT 147/2012,</strong> a partir de <strong>01/01/2026,</strong> fica vedada a emissão de novos CF-e-SAT, o que invalidará esses documentos fiscais a partir da referida data, tornando o equipamento SAT sem uso para fins fiscais.​​ A aquisição e a ​ativação de novos equipamentos SAT, a partir de agora, terão vida útil, para fins fiscais, inferior a 1 (um) ano, até <strong>31/12/2025</strong> somente. Como alternativa, o contribuinte deverá passar a usar a NFC-e.</p>
+            
+        <h5><strong>O que fazer com meu equipamento SAT?</strong></h5>
+        <p>Após a migração para a NFC-e, o SAT-CFe poderá ser desativado e armazenado conforme as normas da Secretaria da Fazenda de São Paulo.</p> 
+
+      </div>
+  
+
+    </div>
+  </div>
+
+
+
         <div class="wrapper">
             <!-- Barra Superior Inicio -->
             <div class="top-bar">
@@ -335,5 +519,21 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+
+        <script>
+            function openModal() {
+              document.getElementById('custom-modal-container').classList.add('active');
+              document.body.style.overflow = 'hidden';
+            }
+          
+            function closeModal() {
+              document.getElementById('custom-modal-container').classList.remove('active');
+              document.body.style.overflow = 'auto';
+            }
+          
+            // Abrir automaticamente ao carregar
+            window.addEventListener('load', openModal);
+          </script>
     </body>
 </html>
