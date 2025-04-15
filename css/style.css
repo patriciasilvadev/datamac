@@ -117,6 +117,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .btnproduct, .btnsolucoes {
@@ -130,6 +131,23 @@ a:focus {
     border-radius: 0;
     background: var(--dark-color);
     transition: .3s;
+}
+.btnservices {
+    position: relative;
+     margin-top: 15px;
+     padding: 15px 35px;
+     font-size: 16px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     color: var(--dark-color);
+     border-radius: 0;
+     border: solid 2px var(--dark-color);
+     transition: .3s;
+ }
+ .btnservices:hover {
+    color: white;
+    background: var(--dark-color);
+    border-color: var(--dark-color);
 }
 .ml-auto .btnsolucoes:hover, .ml-auto .btnproduct:hover {
     color: #ffffff;
@@ -188,11 +206,12 @@ a:focus {
 .top-bar .top-bar-item {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    text-align: center;
 }
 
 .top-bar .top-bar-icon {
-    width: 30px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,7 +220,7 @@ a:focus {
 .top-bar .top-bar-icon [class^="flaticon-"]::before {
     margin: 0;
     color: #000000;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .top-bar .top-bar-text {
@@ -211,15 +230,16 @@ a:focus {
 .top-bar .top-bar-text h3 {
     margin: 0 0 5px 0;
     color: #000000;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .top-bar .top-bar-text p {
     margin: 0;
     color: #000000;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
+    
 }
 
 @media (min-width: 992px) {
@@ -386,14 +406,14 @@ a:focus {
 
 .carousel .carousel-caption p {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
 .carousel .carousel-caption h1 {
     color: #ffffff;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 35px;
 }
@@ -543,9 +563,9 @@ a:focus {
     }
 }
 
-/*******************************/
-/********** Contato Whatsapp CSS ***********/
-/*******************************/
+/******************************/
+/**** Contato Whatsapp CSS ****/
+/******************************/
 .contactwhats {
 	margin: 40px 0px;
 }
@@ -562,24 +582,17 @@ a:focus {
 }
 .content-contactwhats {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 40px 0px;
   color: white;
-  
+  text-align: center;
 }
 .content-contactwhats h2{
 	font-size: 25px;
 	color: #ffffff;
 }
 
-.left-contactwhats {
-	width: 30%;
-	padding: 20px;
-}
 
-.right-contactwhats {
-	width: 70%;
-}
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 1290px) {
@@ -617,6 +630,11 @@ a:focus {
     font-weight: 700;
 }
 
+.just-text-subtitle h2 {
+    text-align: justify;
+    font-size: 30px;
+}
+
 @media (max-width: 767.98px) {
     .section-header h2 {
         font-size: 30px;
@@ -631,6 +649,9 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 100px 0;
+}
+.bege {
+    background-color: #fff6e6;
 }
 
 .about .section-header {
@@ -700,27 +721,30 @@ a:focus {
 .column-services {
   flex: 25%;
   padding: 20px;
+
 }
 .content-services {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   padding: 40px 0px;
   color: white;
-  
+  text-align: center;
+
 }
 .content-services h2{
-	font-size: 25px;
+	font-size: 20px;
 	color: #ffffff;
 }
-
-.left-services {
-	width: 30%;
-	padding: 20px;
+.content-services p{
+	font-size: 16px;
+	color: #ffffff;
+}
+.content-services img{
+	width: 80px;
+    margin: 20px 0;
 }
 
-.right-services {
-	width: 70%;
-}
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 1290px) {
@@ -898,6 +922,9 @@ a:focus {
     font-weight: 600;
     color: var(--dark-color);
     transition: .5s;
+}
+.product-text-p {
+    font-size: 12px;
 }
 
 .product .product-text p {
@@ -2264,45 +2291,13 @@ a:focus {
     border-right: none;
 }
 
-
 .footer .copyright {
     padding: 30px 15px;
-}
-
-.footer .copyright p {
-    margin: 0;
+	margin: 0;
     color: #ffffff;
+	text-align: center;
 }
 
-.footer .copyright .col-md-6:last-child p {
-    text-align: right;
-}
-
-.footer .copyright p a {
-    color: #fdbe33;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.footer .copyright p a:hover {
-    color: #ffffff;
-}
-
-@media (max-width: 768px) {
-    .footer .copyright p,
-    .footer .copyright .col-md-6:last-child p {
-        margin: 5px 0;
-        text-align: center;
-    }
-}
-@media (max-width: 1024px) {
-    .f-menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: right;
-        gap: 10px;
-    }
-}
 .pulse {
     animation: pulse 0.5s infinite;
     margin: 0 auto;
@@ -2402,128 +2397,45 @@ a:focus {
 /*******************************************/
 /********* Cases de sucessos CSS **********/
 /******************************************/
-.mySlides-instacarousel {display: none}
-
-
-/* Slideshow container */
-.slideshow-container-instacarousel {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  
-}
-
-/* Next & previous buttons */
-.prev-instacarousel, .next-instacarousel {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 24px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next-instacarousel {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev-instacarousel:hover, .next-instacarousel:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text-instacarousel {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext-instacarousel {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot-instacarousel {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active-instacarousel, .dot-instacarousel:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade-instacarousel {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from-instacarousel {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev-instacarousel, .next-instacarousel,.text-instacarousel {font-size: 11px}
-}
-
-/* Float four columns side by side */
-.column-instacarousel {
-  float: left;
-  width: 33%;
-  padding: 0 10px;
-  margin: 0px auto;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row-instacarousel {margin: auto 30px;}
-
-/* Clear floats after the columns */
-.row-instacarousel:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 768px) {
-  .column-instacarousel {
-    width: 90%;
-    display: block;
-    margin-bottom: 20px;
+.instavideo {
+    box-sizing: border-box;
   }
-}
+  
+ 
+  /* Float four columns side by side */
+  .column-instavideo {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row-instavideo {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row-instavideo:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 768px) {
+    .column-instavideo {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card-instavideo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 26px 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
 
-/* Style the counter cards */
-.card-instacarousel {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-
+  .justify-modal {
+    text-align: justify;
+  }
